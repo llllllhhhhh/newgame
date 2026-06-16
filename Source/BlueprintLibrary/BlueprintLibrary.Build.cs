@@ -4,7 +4,7 @@ public class BlueprintLibrary : ModuleRules
 {
     public BlueprintLibrary(ReadOnlyTargetRules Target) : base(Target)
     {
-        // 公开依赖 - 使用本模块的其他模块也会得到这些依赖
+        // 鍏紑渚濊禆 - 浣跨敤鏈ā鍧楃殑鍏朵粬妯″潡涔熶細寰楀埌杩欎簺渚濊禆
         PublicDependencyModuleNames.AddRange(new string[]
         {
             "Core",
@@ -12,15 +12,14 @@ public class BlueprintLibrary : ModuleRules
             "Engine"
         });
 
-        // 私有依赖 - 仅本模块内部使用
+        // 绉佹湁渚濊禆 - 浠呮湰妯″潡鍐呴儴浣跨敤
         PrivateDependencyModuleNames.AddRange(new string[]
         { 
-            // 如果需要蓝图库功能，通常需要 SlateCore
             "Slate",
             "SlateCore"
         });
 
-        // 允许本模块中的函数被蓝图调用
+        // 鍏佽鏈ā鍧椾腑鐨勫嚱鏁拌钃濆浘璋冪敤
         PublicDefinitions.Add("WITH_BLUEPRINTLIBRARY=1");
     }
 }

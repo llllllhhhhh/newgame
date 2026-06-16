@@ -6,14 +6,14 @@
 #include "Modules/ModuleInterface.h"
 
 /**
- * BlueprintLibrary Ä£¿éµÄÈë¿Ú½Ó¿Ú
+ * BlueprintLibrary æ¨¡å—çš„å…¥å£æ¥å£
  */
 class FBlueprintLibraryModule : public IModuleInterface
 {
 public:
-    /** Ä£¿é¼ÓÔØÊ±µ÷ÓÃ */
-    virtual void StartupModule() override;
+    ///** æ¨¡å—åŠ è½½æ—¶è°ƒç”¨ */
+    //virtual void StartupModule() override;
 
-    /** Ä£¿éĞ¶ÔØÊ±µ÷ÓÃ */
-    virtual void ShutdownModule() override;
+    ///** æ¨¡å—å¸è½½æ—¶è°ƒç”¨ */
+    //virtual void ShutdownModule() override;
 };
